@@ -69,7 +69,7 @@ export default function PostTwitForm(){
   const onFileChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
     const {files} =e.target;
     if(files && files.length===1){
-      if(files[0].size>100000){
+      if(files[0].size>1000000){
         alert("File size is too big. Please choose another one.");
         setFile(null);
       } else setFile(files[0]);
@@ -89,7 +89,7 @@ export default function PostTwitForm(){
         userId: user.uid,
       });
       if(file){
-        const locationRef=ref(storage, `twits/${user.uid}-${user.displayName}/${doc.id}`);
+        const locationRef=ref(storage, `twits/${user.uid}/${doc.id}`);
         const result = await uploadBytes(locationRef,file);
         const url= await getDownloadURL(result.ref);
         await updateDoc(doc, {

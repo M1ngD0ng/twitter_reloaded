@@ -54,6 +54,9 @@ const Wrapper=styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
+  ::-webkit-scrollbar {
+    display:none;
+  }
 `;
 function App() {
   const [isLoading, setLoading]=useState(true);
