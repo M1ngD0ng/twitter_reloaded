@@ -1,7 +1,7 @@
 
 
 import styled from "styled-components";
-import PostTwitForm from "../components/post-twit-from";
+import PostTwitForm from "../components/post-twit-form";
 import Timeline from "../components/timeline";
 
 const Wrapper = styled.div`

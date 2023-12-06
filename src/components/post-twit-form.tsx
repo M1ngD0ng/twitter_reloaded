@@ -29,7 +29,7 @@ const TextArea=styled.textarea`
   }
 `;
 
-const AttachFileButton=styled.label`
+  export const AttachFileButton=styled.label`
   padding: 10px 0px;
   color: #1d9bf0;
   text-align: center;
@@ -40,7 +40,7 @@ const AttachFileButton=styled.label`
   cursor: pointer;
 `;
 
-const AttachFileInput=styled.input`
+ export const AttachFileInput=styled.input`
   display: none;
 `;
 
