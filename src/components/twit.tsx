@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ITwit } from "./timeline";
 import { auth, db, storage } from "../firebase";
-import { addDoc, collection, deleteDoc, doc, updateDoc } from "firebase/firestore";
+import { deleteDoc, doc, updateDoc } from "firebase/firestore";
 import { deleteObject, getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { useState } from "react";
 import { AttachFileInput } from "./post-twit-form";
