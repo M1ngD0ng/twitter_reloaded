@@ -47,7 +47,7 @@ export default function CreateAccount() {
     };
     return (
         <Wrapper>
-            <Title>Join HyoX</Title>
+            <Title>Join X</Title>
             <Form onSubmit={onSubmit}>
                 <Input onChange={onChange} name="name" value={name} placeholder="Name" type="text" required/>
                 <Input onChange={onChange} name="email" value={email} placeholder="Email" type="email" required/>
