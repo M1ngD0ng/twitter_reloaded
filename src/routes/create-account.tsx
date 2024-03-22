@@ -4,7 +4,7 @@ import { auth } from "../firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { FirebaseError } from "firebase/app";
 import { Error, Form, Input, Switcher, Title, Wrapper } from "../components/auth-components";
-import GithubButton from "../components/github-btn";
+// import GithubButton from "../components/github-btn";
 
 export default function CreateAccount() {
     const navigate = useNavigate();
@@ -59,7 +59,7 @@ export default function CreateAccount() {
                 Already have an account??{" "}
                 <Link to="/login">Go to login! &rarr;</Link>
             </Switcher>
-            <GithubButton />
         </Wrapper>
     );
 }
+// <GithubButton /> sns 로그인 오류로 잠시 삭제
